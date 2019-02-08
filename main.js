@@ -51,9 +51,7 @@ function blankBoard(){
 
 function columnClick(event) {
 	const column = event.target.parentElement;
-  console.log(column);
 	const columnIndex = column.getElementsByClassName('slot one');
-  console.log(columnIndex);
 	const slotsInColumn = column.getElementsByClassName('slot');
 	const slotIndex = getAvailableSlot(slotsInColumn);
 	if(slotIndex != -1){
@@ -105,7 +103,6 @@ function checkWinner(){
 }
 
 function gameOver(playerNum){
-  console.log('winner');
 	const winnerMessage = "Player " + playerNum + " wins!";
 	const winDiv = document.createElement("div");
 	winDiv.innerHtml = winnerMessage;
@@ -115,7 +112,6 @@ function gameOver(playerNum){
 
 function clearBoard(){
 	const slots = document.getElementsByClassName("slot");
-	console.log({slots});
 }
 
 main();

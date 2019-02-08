@@ -1,4 +1,4 @@
-Connect Four Game
+Connect Four
 =================
 by Daniel Thompson
 
@@ -6,7 +6,6 @@ by Daniel Thompson
 
 I decided to build Connect Four for my first GA WDI project. It can be accessed
 using the following link: http://wanting-body.surge.sh
-
 
 ## Game Description
 
@@ -89,3 +88,4 @@ function verticalWin(verticalMatch) {
   })
 }
 ```
+## Major Problems Encountered
