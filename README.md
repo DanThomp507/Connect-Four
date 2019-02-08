@@ -7,7 +7,7 @@ by Daniel Thompson
 I decided to build Connect Four for my first GA WDI project. It can be accessed
 using the following link: http://wanting-body.surge.sh
 
-![alt text](https://imgur.com/gallery/S7MeZDr "Connect Four Game")
+![Connect Four Game](ConnectFour.png)
 
 ## Game Description
 
