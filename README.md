@@ -7,6 +7,8 @@ by Daniel Thompson
 I decided to build Connect Four for my first GA WDI project. It can be accessed
 using the following link: http://wanting-body.surge.sh
 
+![alt text](https://imgur.com/gallery/S7MeZDr "Connect Four Game")
+
 ## Game Description
 
 Connect Four is a two-player connection game. It begins with each player
@@ -35,7 +37,7 @@ directed to the game page and the game is initialized when the first user
 clicks on the Connect Four grid. I elected for simplicity and directness, as
 the page features a header, the game grid, and a footer.
 
-(https://drive.google.com/open?id=1mgjhfGYda5yGcIskBLsgjn9Ovhpp8nWUdepict)
+https://drive.google.com/open?id=1mgjhfGYda5yGcIskBLsgjn9Ovhpp8nWUdepict
 
 ## MVP
 
