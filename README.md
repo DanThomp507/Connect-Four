@@ -1,9 +1,11 @@
 Connect Four Game
 =================
+by Daniel Thompson
 
 ## Project Description
 
-This is my first project for GA WDI.
+I decided to build Connect Four for my first GA WDI project. It can be accessed
+using the following link: http://wanting-body.surge.sh
 
 ## Game Description
 
@@ -19,6 +21,12 @@ The objective of the game is to be the first player to connect four discs in a
 row; this can be achieved vertically, horizontally or diagonally. If the
 grid is completely filled with discs and neither player has managed to connect
 four of their discs in a row, then the game ends in a draw.
+
+## Technologies Used
+
++ HTML
++ CSS
++ Javascript
 
 ## Wireframes
 
@@ -38,18 +46,45 @@ The game checks for a win vertically.
 
 ## Post-MVP
 
-I plan on making the following changes upon completing my MVP:
+I plan on making the following post-MVP changes:
 
---writing functions that check for wins horizontally and diagonally
++ writing functions that check for wins horizontally and diagonally
 
---writing a function that clears the game board upon the declaration of a
++ writing a function that clears the game board upon the declaration of a
 winner
 
---the creation of landing, game and win pages that are triggered by the
++ the creation of landing, game and win pages that are triggered by the
 click of a button and the completion of the game
 
---a timer above the game board that allows 10 seconds for each player to
++ a timer above the game board that allows 10 seconds for each player to
 make a move
 
---a player heading that indicates which player's turn it is, which will also
++ a player heading that indicates which player's turn it is, which will also
 display the winner of the game
+
+## Code Snippet
+
+I am particularly proud of this function because it checks for vertical wins
+in the Connect Four game.  
+
+```
+function verticalWin(verticalMatch) {
+  let colorCount = 0;
+  let currentPlayer;
+  verticalMatch.forEach( spot =>{
+    if("slot blank" !== spot.className){
+        if(currentPlayer === spot.className){
+            colorCount += 1;
+        } else {
+            currentPlayer = spot.className;
+            colorCount = 1;
+        }
+    }
+    if(colorCount === 4){
+      alert('You win!');
+      winner =  currentPlayer;
+      return;
+    }
+  })
+}
+```

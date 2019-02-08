@@ -2,14 +2,9 @@ body {
 background-color: #3d9cc1;
 text-align: center;
 }
-header {
-width: 100%;
-/* border-bottom: 2px solid black; */
-}
 
 h1 {
   font-family: 'Shadows Into Light', cursive;
-  /* text-align: center; */
   font-size: 80px;
   display: flex;
   justify-content: center;
@@ -30,7 +25,6 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: center;
-
 }
 
 .column {
@@ -53,26 +47,17 @@ h1 {
 .two {
 	background-color: red;
 }
-/* footer {
-  justify-content: center;
-  background-color: #d4b261;
-  font-family: 'Shadows Into Light', cursive;
-  margin-top: 20px;
-  font-size: 25px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  border-top: 2px solid black;
-} */
+
 @media screen and (max-width: 1000px){
-body {
+
+  body {
   background-color: #3d9cc1;
   text-align: center;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px){
+
   body {
   background-color: #3d9cc1;
   text-align: center;

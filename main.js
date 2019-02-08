@@ -1,7 +1,5 @@
-//Global Variables
-
-let playerTurn = 0; //Player 1 is 0, Player 2 is 1
-const numToString = ["one","two"]
+let playerTurn = 0;
+const numToString = ["one","two"];
 const numColumns = 7;
 const numRows = 6;
 let winner;
@@ -11,8 +9,6 @@ let boardDOM;
 function main() {
   loadBoard();
 }
-
-//
 
 function loadBoard() {
   const game = document.createElement("div");
@@ -24,9 +20,6 @@ function loadBoard() {
   createBoardInterior(board, numColumns, numRows);
   boardDOM = document.querySelector('#board');
 }
-
-
-//
 
 function createBoardInterior(board, numColumns, numRows) {
   for(i = 0; i < numColumns; i++) {
@@ -43,7 +36,7 @@ function createBoardInterior(board, numColumns, numRows) {
     }
   }
 }
-//
+
 function blankBoard(){
 	const board = [];
 	for(i = 0; i<numColumns; i++){
@@ -58,16 +51,15 @@ function blankBoard(){
 
 function columnClick(event) {
 	const column = event.target.parentElement;
-  console.log(column)
+  console.log(column);
 	const columnIndex = column.getElementsByClassName('slot one');
   console.log(columnIndex);
 	const slotsInColumn = column.getElementsByClassName('slot');
 	const slotIndex = getAvailableSlot(slotsInColumn);
 	if(slotIndex != -1){
-		const slot = slotsInColumn[slotIndex]
+		const slot = slotsInColumn[slotIndex];
 		slot.setAttribute('class', 'slot ' + numToString[playerTurn]);
 		playerTurn = (playerTurn + 1) % 2;
-		// numericBoard[columnIndex][slotsInColumn] = playerTurn + 1;
 	}
 	checkWinner();
 }
@@ -98,7 +90,7 @@ function verticalWin(verticalMatch) {
       winner =  currentPlayer;
       return;
     }
-  })
+  });
 }
 
 function checkWinner(){
@@ -109,12 +101,12 @@ function checkWinner(){
       gameOver(winner.slice(-3));
       clearBoard();
     }
-  })
+  });
 }
 
 function gameOver(playerNum){
   console.log('winner');
-	const winnerMessage = "Player " + playerNum + " wins!"
+	const winnerMessage = "Player " + playerNum + " wins!";
 	const winDiv = document.createElement("div");
 	winDiv.innerHtml = winnerMessage;
 	winDiv.setAttribute("class","message");
