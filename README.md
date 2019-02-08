@@ -65,14 +65,17 @@ display the winner of the game
 ## Code Snippet
 
 I am particularly proud of this function because it checks for vertical wins
-in the Connect Four game.  
+in the Connect Four game.  I use a ForEach loop to loop through the columns,
+and use conditionals to check if the color count has changed; if the color
+changes, the count resets to 1. If one player gets four in a row,
+they are alerted of their victory.  
 
 ```
 function verticalWin(verticalMatch) {
   let colorCount = 0;
   let currentPlayer;
   verticalMatch.forEach( spot =>{
-    if("slot blank" !== spot.className){
+    if("slot blank" !== spot.className) {
         if(currentPlayer === spot.className){
             colorCount += 1;
         } else {
@@ -85,7 +88,7 @@ function verticalWin(verticalMatch) {
       winner =  currentPlayer;
       return;
     }
-  })
+  });
 }
 ```
 ## Major Problems Encountered

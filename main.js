@@ -114,4 +114,8 @@ function clearBoard(){
 	const slots = document.getElementsByClassName("slot");
 }
 
+function refreshPage(){
+  window.location.reload();
+}
+
 main();
