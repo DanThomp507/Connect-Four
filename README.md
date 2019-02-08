@@ -91,4 +91,3 @@ function verticalWin(verticalMatch) {
   });
 }
 ```
-## Major Problems Encountered
