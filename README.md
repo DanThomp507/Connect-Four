@@ -6,7 +6,7 @@ by Daniel Thompson
 
 I decided to build Connect Four for my first GA WDI project.
 
-[Connect Four] (https://yummy-canvas.surge.sh)
+Play here: https://yummy-canvas.surge.sh
 
 ## Game Description
 
