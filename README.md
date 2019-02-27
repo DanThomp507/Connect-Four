@@ -4,8 +4,9 @@ by Daniel Thompson
 
 ## Project Description
 
-I decided to build Connect Four for my first GA WDI project. It can be accessed
-using the following link: <yummy-canvas.surge.sh>
+I decided to build Connect Four for my first GA WDI project.
+
+[Connect Four] (https://yummy-canvas.surge.sh)
 
 ## Game Description
 
