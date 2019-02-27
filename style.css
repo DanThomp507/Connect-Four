@@ -5,9 +5,10 @@ text-align: center;
 
 h1 {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 80px;
+  font-size: 70px;
   display: flex;
   justify-content: center;
+
 }
 button {
   padding: 5px 15px;
@@ -23,6 +24,17 @@ button {
   height: 300px;
   padding: 1%;
   margin: auto;
+}
+.refresh {
+  width: 180px;
+  height: 40px;
+  border: 1px solid #000033;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #000033;
+  color: white;
 }
 
 #board {
