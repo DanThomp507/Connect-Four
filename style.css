@@ -35,6 +35,7 @@ button {
   font-weight: bold;
   background-color: #000033;
   color: white;
+  margin-bottom: 20px;
 }
 
 #board {
